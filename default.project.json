@@ -15,11 +15,7 @@
         "$className": "Folder",
         "$path": "DevPackages/"
       },
-      "@rbxts/include": {
-        "$className": "Folder",
-        "$path": "include"
-      },
-      "$path": "out/shared"
+      "$path": "src/shared"
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
@@ -27,17 +23,17 @@
         "$className": "Folder",
         "$path": "ServerPackages/"
       },
-      "$path": "out/server"
+      "$path": "src/server"
     },
     "StarterPlayer": {
       "$className": "StarterPlayer",
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
-        "$path": "out/client/player"
+        "$path": "src/client/player"
       },
       "StarterCharacterScripts": {
         "$className": "StarterCharacterScripts",
-        "$path": "out/client/character"
+        "$path": "src/client/character"
       }
     },
     "Workspace": {

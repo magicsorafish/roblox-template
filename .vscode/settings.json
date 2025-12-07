@@ -4,17 +4,6 @@
     "editor.defaultFormatter": "JohnnyMorganz.stylua",
     "editor.formatOnSave": true
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "eslint.run": "onType",
-  "eslint.format.enable": false,
-  "eslint.useFlatConfig": true,
   "code-runner.executorMapByFileExtension": {
     ".luau": "lune run $fullFileName"
   },
@@ -57,24 +46,17 @@
     ".github": false,
     "blog": false,
     "docs": false,
-    "include": false,
-    "node_modules": false,
     ".luaurc": false,
-    ".prettierignore": false,
-    ".prettierrc": false,
     ".stylua.toml": false,
     ".styluaignore": false,
     "asphalt.lock.toml": false,
-    "eslint.config.mjs": false,
     "LICENSE": false,
-    "package-lock.json": false,
     "README.md": false,
     "robloxfix.yml": false,
     "rokit.toml": false,
     "selene.toml": false,
     "sourcemap.json": false,
     "moonwave.toml": false,
-    "tsconfig.json": false
   },
   "taskManager.exclude": "^__"
 }

@@ -14,13 +14,6 @@
             "command": "asphalt sync --target cloud --api-key ${input:asphaltApiKey}"
         },
         {
-            "label": "__rbxtscbuild",
-            "type": "shell",
-            "command": "npm run 'rbxtsc build' -- --rojo ${input:projectJson}",
-            "hide": true,
-            "group": "build"
-        },
-        {
             "label": "__wallyinstall",
             "type": "shell",
             "windows": {
@@ -42,27 +35,18 @@
         {
             "label": "__moonwavebuild",
             "type": "shell",
-            "command": "npm run 'moonwave build' -- --out-dir out/moonwave",
+            "command": "moonwave build --out-dir out/moonwave",
             "hide": true,
             "group": "build"
         },
         {
             "label": "Build Place",
-            "dependsOn": ["__wallyinstall", "__rbxtscbuild","__rojobuild","__moonwavebuild"],
+            "dependsOn": ["__wallyinstall", "__rojobuild","__moonwavebuild"],
             "dependsOrder": "sequence",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-        },
-        {
-            "label": "__rbxtscwatch",
-            "type": "shell",
-            "command": "npm run 'rbxtsc watch' -- --rojo ${input:projectJsonRbxTS}",
-            "hide": true,
-            "presentation": {
-                "group": "watchTask"
-            }
         },
         {
             "label": "__rojoserve",
@@ -76,7 +60,7 @@
         {
             "label": "__moonwavedev",
             "type": "shell",
-            "command": "npm run 'moonwave dev'",
+            "command": "moonwave dev",
             "hide": true,
             "presentation": {
                 "group": "watchTask"
@@ -84,7 +68,7 @@
         },
         {
             "label": "Watch Place",
-            "dependsOn": ["__rbxtscwatch", "__rojoserve", "__moonwavedev"],
+            "dependsOn": ["__rojoserve", "__moonwavedev"],
             "dependsOrder": "parallel",
         },
         {
@@ -97,17 +81,8 @@
             }
         },
         {
-            "label": "__linttypescript",
-            "type": "shell",
-            "command": "npm run 'eslint'",
-            "hide": true,
-            "presentation": {
-                "group": "lintTask"
-            }
-        },
-        {
             "label": "Lint",
-            "dependsOn": ["__lintluau", "__linttypescript"],
+            "dependsOn": ["__lintluau"],
             "dependsOrder": "parallel",
         },
         {
@@ -120,17 +95,8 @@
             }
         },
         {
-            "label": "__formattypescript",
-            "type": "shell",
-            "command": "npm run 'prettier write'",
-            "hide": true,
-            "presentation": {
-                "group": "formatTask"
-            }
-        },
-        {
             "label": "Format",
-            "dependsOn": ["__formatluau", "__formattypescript"],
+            "dependsOn": ["__formatluau"],
             "dependsOrder": "parallel"
         }
     ],

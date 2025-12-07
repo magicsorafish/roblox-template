@@ -6,7 +6,5 @@
         "redhat.vscode-yaml",
         "tamasfe.even-better-toml",
         "johnnymorganz.stylua",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint"
         ]
 }
