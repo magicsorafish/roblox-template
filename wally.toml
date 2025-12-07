@@ -1,0 +1,17 @@
+[package]
+private = true
+name = "gituser/repos"
+description = ""
+version = "0.1.0"
+license = "MIT"
+author = []
+realm = "shared|server"
+registry = "https://github.com/UpliftGames/wally-index"
+homepage = ""
+# include = []
+# exclude = []
+[dependencies]
+
+[server-dependencies]
+
+[dev-dependencies]

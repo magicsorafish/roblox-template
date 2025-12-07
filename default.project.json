@@ -7,9 +7,13 @@
     "$className": "DataModel",
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "Packages": {
+      "Wally": {
         "$className": "Folder",
         "$path": "Packages/"
+      },
+      "WallyDev": {
+        "$className": "Folder",
+        "$path": "DevPackages/"
       },
       "@rbxts/include": {
         "$className": "Folder",
@@ -19,6 +23,10 @@
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
+      "Wally": {
+        "$className": "Folder",
+        "$path": "ServerPackages/"
+      },
       "$path": "out/server"
     },
     "StarterPlayer": {
