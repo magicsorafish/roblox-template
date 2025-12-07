@@ -23,29 +23,31 @@
       "fileMatch": [
         "**/*.model.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/model.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/model.schema.json"
     },
     {
       "fileMatch": [
         "**/*.meta.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/meta.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/meta.schema.json"
     },
     {
       "fileMatch": [
         "**/*.project.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/project.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/project.schema.json"
     }
   ],
   "workbench.editor.customLabels.enabled": true,
   "workbench.editor.customLabels.patterns": {
-    "**/init.**.luau": "${dirname}",
-    "**/init.luau": "${dirname}",
-    "**/**.**.luau": "${filename}",
-    "**/index.**.ts": "${dirname}",
-    "**/index.ts": "${dirname}",
-    "**/**.**.ts": "${filename}"
+    "**/init.**.luau": "${dirname} - ${extname(1)}",
+    "**/init.luau": "${dirname} - shared",
+    "**/**.luau": "${filename} - shared",
+    "**/**.**.luau": "${filename} - ${extname(1)}",
+    "**/index.**.ts": "${dirname} - ${extname(1)}",
+    "**/index.ts": "${dirname} - shared",
+    "**/**.**.ts": "${filename} - ${extname(1)}",
+    "**/**.project.json": "${dirname} - ${filename}"
   },
   "files.associations": {
     ".luaurc": "json"
