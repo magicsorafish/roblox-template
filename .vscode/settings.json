@@ -65,6 +65,7 @@
     ".stylua.toml": false,
     ".styluaignore": false,
     "asphalt.lock.toml": false,
+    "eslint.config.mjs": false,
     "LICENSE": false,
     "package-lock.json": false,
     "README.md": false,
