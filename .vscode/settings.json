@@ -23,52 +23,58 @@
       "fileMatch": [
         "**/*.model.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/model.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/model.schema.json"
     },
     {
       "fileMatch": [
         "**/*.meta.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/meta.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/meta.schema.json"
     },
     {
       "fileMatch": [
         "**/*.project.json"
       ],
-      "url": "https://raw.githubusercontent.com/magicchex/json-schema/refs/heads/main/rbx-rojo/project.schema.json"
+      "url": "https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/rbx-rojo/project.schema.json"
     }
   ],
   "workbench.editor.customLabels.enabled": true,
   "workbench.editor.customLabels.patterns": {
-    "**/init.**.luau": "${dirname}",
-    "**/init.luau": "${dirname}",
-    "**/**.**.luau": "${filename}",
-    "**/index.**.ts": "${dirname}",
-    "**/index.ts": "${dirname}",
-    "**/**.**.ts": "${filename}"
+    "**/init.**.luau": "${dirname} - ${extname(1)}",
+    "**/init.luau": "${dirname} - shared",
+    "**/**.luau": "${filename} - shared",
+    "**/**.**.luau": "${filename} - ${extname(1)}",
+    "**/index.**.ts": "${dirname} - ${extname(1)}",
+    "**/index.ts": "${dirname} - shared",
+    "**/**.**.ts": "${filename} - ${extname(1)}",
+    "**/**.project.json": "${dirname} - ${filename}"
   },
   "files.associations": {
     ".luaurc": "json"
   },
   "typescript.tsc.autoDetect": "off",
   "files.exclude": {
-    "node_modules": false,
-    "include": false,
     ".github": false,
-    "sourcemap.json": false,
-    "selene.toml": false,
-    "stylua.toml": false,
-    ".styluaignore": false,
-    "tsconfig.json": false,
-    "package-lock.json": false,
-    "moonwave.toml": false,
     "blog": false,
     "docs": false,
+    "include": false,
+    "node_modules": false,
+    ".luaurc": false,
     ".prettierignore": false,
     ".prettierrc": false,
-    ".eslintrc": false,
-    ".luaurc": false,
-    "asphalt.lock.toml": false
+    ".stylua.toml": false,
+    ".styluaignore": false,
+    "asphalt.lock.toml": false,
+    "eslint.config.mjs": false,
+    "LICENSE": false,
+    "package-lock.json": false,
+    "README.md": false,
+    "robloxfix.yml": false,
+    "rokit.toml": false,
+    "selene.toml": false,
+    "sourcemap.json": false,
+    "moonwave.toml": false,
+    "tsconfig.json": false
   },
   "taskManager.exclude": "^__"
 }

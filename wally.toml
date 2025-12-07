@@ -1,0 +1,18 @@
+#:schema https://raw.githubusercontent.com/magicsorafish/json-schema/refs/heads/main/upliftgames/wally.schema.json
+[package]
+private = true
+name = "gituser/repos"
+description = ""
+version = "0.1.0"
+license = "MIT"
+author = []
+realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+homepage = ""
+# include = []
+# exclude = []
+[dependencies]
+
+[server-dependencies]
+
+[dev-dependencies]
