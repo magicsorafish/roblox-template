@@ -11,6 +11,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   deploy-documentation:
+    name: deploy documentation
     permissions:
       contents: write
       pages: write
