@@ -10,6 +10,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   selene:
+    name: selene
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout

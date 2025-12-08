@@ -16,6 +16,7 @@ env:
   PLACE_PUBLISHING_KEY: ${{ secrets.PLACE_PUBLISHING_KEY }}
 jobs:
   deploy-place-to-roblox:
+    name: deploy place to roblox
     permissions:
       contents: write
     runs-on: ubuntu-22.04
@@ -59,6 +60,7 @@ jobs:
       - name: Deploy Place to Roblox
         run: rojo upload --asset_id $PLACE_ID --universe_id $UNIVERSE_ID --api_key $PLACE_PUBLISHING_KEY
   deploy-documentation:
+    name: deploy documentation
     permissions:
       contents: write
       pages: write
