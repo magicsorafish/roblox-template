@@ -2,7 +2,11 @@
   "luau-lsp.plugin.enabled": true,
   "[luau]": {
     "editor.defaultFormatter": "JohnnyMorganz.stylua",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.folding": true,
+    "editor.minimap.showRegionSectionHeaders": true,
+    "editor.minimap.showMarkSectionHeaders": true,
+    "editor.minimap.markSectionHeaderRegex": "(?:\\bMARK:\\s*(?<separator>-?)\\s*(?<label>.*))|(?:#?\\bregion\\b\\s*(?<label>.*))|(?:\\bTODO:\\s*(?<label>.*))$"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
